@@ -1,0 +1,34 @@
+language: node_js
+
+node_js:
+  - "24"
+
+branches:
+  only:
+    - main
+
+cache:
+  directories:
+    - node_modules
+    - "$HOME/.npm"
+
+install:
+  - npm ci
+  - npm install --global yarn@1.22.22
+
+script:
+  - npm run test:app -- --runInBand
+  - yarn build:pages
+
+deploy:
+  provider: pages:git
+  token: $github_token
+  cleanup: false
+  local_dir: build
+  target_branch: gh-pages
+  keep_history: true
+  on:
+    branch: main
+
+# For a repository whose default branch is master, change both main values above.
+# Add github_token as a hidden variable in this repository's Travis CI settings.

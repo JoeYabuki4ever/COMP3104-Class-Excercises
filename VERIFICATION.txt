@@ -1,0 +1,33 @@
+COMP3104 LAB 06 LOCAL VERIFICATION
+Student: Taharim Haque
+Student ID: 101418321
+Prepared: October 18, 2026 (America/New_York)
+
+Checks completed on the prepared files:
+- npm ci: clean installation from the included lockfile succeeded.
+- Travis YAML parsed successfully; main branch restriction, hidden variable
+  reference, build directory and gh-pages target were verified locally.
+- npm run test:app -- --runInBand: 1 test suite passed, 3 tests passed.
+- A CI-mode build with Yarn Classic 1.22.22 succeeded using simulated
+  TRAVIS_REPO_SLUG metadata to check repository-specific asset URLs.
+- The simulated CI build retained index.html, generated an identical 404.html,
+  and created .nojekyll.
+- A local HTTP server mounted under the simulated project path served the
+  index page, 404 page, JavaScript and CSS with HTTP 200 responses.
+- npm run build:pages: local build without Travis metadata succeeded.
+- The ZIP's build folder contains the local build with relative asset URLs,
+  not the simulated repository's URL.
+- package.json and package-lock.json dependencies agree.
+- ZIP integrity and required file checks passed.
+
+Environment:
+Node.js 24.19.0; npm 11.9.0; Yarn Classic 1.22.22; Linux.
+
+Limits:
+This verifies the code and generated hosting files locally. It does not prove
+an actual Travis-hosted job, GitHub push, merged pull request, GitHub Pages
+publication or D2L submission. Those account actions remain to be completed.
+No deployment token is included in the files.
+
+Read START_HERE.txt and README.md for the remaining steps. Capture evidence
+from your own GitHub, Travis and published website when completing the lab.
