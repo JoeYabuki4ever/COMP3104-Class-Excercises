@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "https://joeyabuki4ever.github.io/COMP3104-Class-Excercises/static/css/main.27ca76a1.css",
+    "main.js": "https://joeyabuki4ever.github.io/COMP3104-Class-Excercises/static/js/main.3e369350.js",
+    "static/js/453.96d50aba.chunk.js": "https://joeyabuki4ever.github.io/COMP3104-Class-Excercises/static/js/453.96d50aba.chunk.js",
+    "index.html": "https://joeyabuki4ever.github.io/COMP3104-Class-Excercises/index.html",
+    "main.27ca76a1.css.map": "https://joeyabuki4ever.github.io/COMP3104-Class-Excercises/static/css/main.27ca76a1.css.map",
+    "main.3e369350.js.map": "https://joeyabuki4ever.github.io/COMP3104-Class-Excercises/static/js/main.3e369350.js.map",
+    "453.96d50aba.chunk.js.map": "https://joeyabuki4ever.github.io/COMP3104-Class-Excercises/static/js/453.96d50aba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.27ca76a1.css",
+    "static/js/main.3e369350.js"
+  ]
+}
